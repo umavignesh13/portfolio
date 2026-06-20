@@ -1,0 +1,44 @@
+/* Keyframe animations and reveal offsets */
+
+/* Initial scroll reveal values */
+.animate-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-trigger {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-trigger.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Floating animation keys */
+.animate-float-slow {
+    animation: floating-y 6s infinite ease-in-out;
+}
+
+@keyframes floating-y {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}

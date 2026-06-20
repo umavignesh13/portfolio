@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dosapati Uma Vignesh — Data Scientist & AI Developer. Portfolio showcasing projects, technical skills, and achievements.">
+    <meta name="keywords" content="Dosapati Uma Vignesh, Data Scientist, AI Developer, Software Engineer, Portfolio, Python, SQL, Machine Learning">
+    <meta name="author" content="Dosapati Uma Vignesh">
+    <title>Dosapati Uma Vignesh — Data Scientist & AI Developer Portfolio</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/avatar.png" as="image">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/achievements.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Page Preloader -->
+    <div id="pagePreloader" class="page-preloader">
+        <div class="preloader-content">
+            <span class="preloader-logo">U<span>V</span></span>
+            <div class="preloader-bar">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="nav-wrapper">
+            <a href="#Hero" class="nav-logo">
+                <span class="nav-logo-text">U<span>V</span></span>
+                <span class="nav-logo-subtext">Uma Vignesh</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <a href="#Hero" class="active">Home</a>
+                <a href="#About">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Education">Education</a>
+                <a href="#Achievements">Achievements</a>
+                <a href="#Certifications">Certifications</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+
+            <a href="#" class="nav-cta" id="resumeCta" aria-label="View Resume">
+                <i class="fas fa-file-invoice"></i> View CV <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Spacer for fixed navbar -->
+    <div class="nav-spacer"></div>
+
+    <div class="container">
+        <main>
+
+            <!-- HERO SECTION -->
+            <section id="Hero" class="hero-section">
+                <div class="hero-content">
+                    <!-- Left Column: Text -->
+                    <div class="hero-text animate-reveal">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <h1>Dosapati Uma Vignesh</h1>
+                        <h2 id="heroSubtitle" data-text="Data Scientist & AI Developer"></h2>
+                        <p>B.Tech Data Science undergraduate at Vignan University. Specialized in data analytics, machine learning modeling, and building intelligent software solutions.</p>
+                        <div class="hero-social">
+                            <a href="https://github.com/umavignesh13" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="brand-social-icon github-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/umavignesh13" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="brand-social-icon linkedin-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://leetcode.com/u/umavignesh13" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" class="brand-social-icon leetcode-icon">
+                                <svg role="img" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/918500040962?text=Let's%20collaborate!" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="brand-social-icon whatsapp-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="hero-download-cv" id="heroResumeBtn" aria-label="View Resume">
+                            <i class="fas fa-file-invoice"></i> View Resume
+                        </a>
+                    </div>
+
+                    <!-- Right Column: Photo + Stats Overlay -->
+                    <div class="hero-image animate-reveal-right">
+                        <div class="orbit-ring ring-1"></div>
+                        <div class="orbit-ring ring-2"></div>
+                        <div class="hero-image-wrapper">
+                            <img src="assets/avatar.png" alt="Dosapati Uma Vignesh — Data Scientist" loading="eager">
+                        </div>
+
+                        <!-- Stats Bar overlaying the bottom of the image -->
+                        <div class="stats-bar">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>150+</h3>
+                                    <p>LeetCode Solved</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>2nd Place</h3>
+                                    <p>VVIT Hackathon</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>5+</h3>
+                                    <p>Projects Built</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT ME -->
+            <section id="About" class="about-section scroll-trigger">
+                <div class="about-wrapper">
+                    <!-- LEFT: Text Content -->
+                    <div class="about-left">
+                        <span class="about-badge"><i class="fas fa-user-circle"></i> Get to know me</span>
+                        <h1 class="about-heading">About <span class="about-heading-accent">Me</span></h1>
+                        <p class="about-bio">I am a **Data Science student** at Vignan University with a deep interest in software development, machine learning, and data analytics. I specialize in identifying data patterns, deriving actionable insights, and building secure, efficient applications.</p>
+                        <p class="about-bio">I enjoy learning new tools and integrating intelligence into user experiences. From full-stack booking dashboards to predictive deep learning engines, I apply systematic engineering to construct performant software products.</p>
+                        <p class="about-bio">Outside of engineering, I have a passion for team sports. I have led teams as a **Kho-Kho captain** in inter-college tournaments and coordinated formal/informal university festivals, bringing collaboration and leadership values into my developer workspace.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS & EXPERTISE -->
+            <section id="Skills" class="skills-section scroll-trigger">
+                <div class="skills-header-container">
+                    <div class="skills-header-left">
+                        <span class="skills-badge">My Expertise</span>
+                        <h1>Skills & <span>Expertise</span></h1>
+                        <p class="skills-subtitle">A balanced toolkit ranging from analytical data frameworks and machine learning algorithms to modern web development technologies.</p>
+                    </div>
+
+                    <div class="skills-header-right">
+                        <!-- CSS Mockup Graphic -->
+                        <div class="skills-decoration">
+                            <div class="dots-grid">
+                                <span></span><span></span><span></span><span></span><span></span><span></span>
+                                <span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <div class="floating-icon code-tags animate-float-slow">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="editor-mockup">
+                                <div class="editor-header">
+                                    <span class="editor-dot red"></span>
+                                    <span class="editor-dot yellow"></span>
+                                    <span class="editor-dot green"></span>
+                                </div>
+                                <div class="editor-body">
+                                    <div class="editor-symbol">&lt;ds/&gt;</div>
+                                    <div class="editor-lines">
+                                        <span class="editor-line el-1"></span>
+                                        <span class="editor-line el-2"></span>
+                                        <span class="editor-line el-3"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabs/Filters -->
+                <div class="skills-tabs">
+                    <button class="skills-tab-btn active" data-category="languages">Languages</button>
+                    <button class="skills-tab-btn" data-category="web">Web Tech</button>
+                    <button class="skills-tab-btn" data-category="tools">Tools & Frameworks</button>
+                    <button class="skills-tab-btn" data-category="concepts">Core Concepts</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-cards-grid">
+                    <!-- Languages -->
+                    <div class="skill-detail-card" data-categories="languages">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="48" height="48">
+                        </div>
+                        <h3>Python</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="languages">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="48" height="48">
+                        </div>
+                        <h3>Java</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="languages">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="48" height="48">
+                        </div>
+                        <h3>SQL</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                        </div>
+                    </div>
+
+                    <!-- Web Tech -->
+                    <div class="skill-detail-card" data-categories="web">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="48" height="48">
+                        </div>
+                        <h3>HTML5</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="web">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="48" height="48">
+                        </div>
+                        <h3>CSS3</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="web">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="48" height="48">
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="web">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" width="48" height="48">
+                        </div>
+                        <h3>React.js</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Frameworks -->
+                    <div class="skill-detail-card" data-categories="tools">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="48" height="48">
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="tools">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" width="48" height="48">
+                        </div>
+                        <h3>Pandas & NumPy</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="tools">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" width="48" height="48">
+                        </div>
+                        <h3>TensorFlow & Keras</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="tools">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain" style="font-size: 2.8rem; color: var(--accent-cyan);"></i>
+                        </div>
+                        <h3>Scikit-Learn</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="tools">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-pie" style="font-size: 2.8rem; color: var(--accent-green);"></i>
+                        </div>
+                        <h3>Power BI & Excel</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="tools">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="48" height="48">
+                        </div>
+                        <h3>VS Code & Colab</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="tools">
+                        <div class="skill-icon text-glow-teal" style="font-size: 2.8rem; display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Outfit', sans-serif; color: var(--accent-cyan);">
+                            AG
+                        </div>
+                        <h3>Antigravity AI</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                        </div>
+                    </div>
+
+                    <!-- Core Concepts -->
+                    <div class="skill-detail-card" data-categories="concepts">
+                        <div class="skill-icon">
+                            <i class="fas fa-project-diagram" style="font-size: 2.8rem; color: var(--accent-cyan);"></i>
+                        </div>
+                        <h3>DSA</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="concepts">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line" style="font-size: 2.8rem; color: var(--accent-green);"></i>
+                        </div>
+                        <h3>Data Analysis</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="concepts">
+                        <div class="skill-icon">
+                            <i class="fas fa-network-wired" style="font-size: 2.8rem; color: var(--accent-cyan);"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                    <div class="skill-detail-card" data-categories="concepts">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud" style="font-size: 2.8rem; color: var(--accent-green);"></i>
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <div class="skill-proficiency">
+                            <span class="dot filled"></span><span class="dot filled"></span><span class="dot empty"></span><span class="dot empty"></span><span class="dot empty"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURED PROJECTS -->
+            <section id="Projects" class="projects-section scroll-trigger">
+                <div class="projects-hero">
+                    <div class="projects-hero-left">
+                        <span class="projects-badge"><i class="fas fa-briefcase"></i> My Work</span>
+                        <h1 class="projects-heading">My <span class="projects-heading-accent">Projects</span></h1>
+                        <p class="projects-subtext">A collection of custom projects demonstrating data analysis, AI models, full-stack architectures, and hardware integrations.</p>
+                    </div>
+                    <div class="projects-hero-right">
+                        <div class="laptop-container">
+                            <div class="laptop-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai">AI & ML</button>
+                    <button class="filter-btn" data-filter="data">Data Science</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                </div>
+
+                <div class="projects-container">
+                    <!-- Project 1: Spa Booking -->
+                    <div class="project-card" data-categories="web">
+                        <div class="project-card-image-wrapper">
+                            <img src="assets/project_spa.png" alt="Umas Wellness Spa Booking System" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-header-row">
+                                <div class="project-card-icon icon-green">
+                                    <i class="fas fa-spa"></i>
+                                </div>
+                                <h3 class="project-card-title">Umas Wellness Spa Booking System</h3>
+                            </div>
+                            <p class="project-card-desc">Luxury single-page reservation platform featuring password-hashing authentication, dynamic booking calendar management, and cancellation control panels.</p>
+                            <div class="project-card-tags tags-green">
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>SQLite</span>
+                                <span>Vanilla JS</span>
+                                <span>Sessions</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <a href="https://github.com/umavignesh13/umas-wellness-spa" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                                <span class="action-divider">|</span>
+                                <a href="https://umas-wellness-spa.onrender.com" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: RentAny Marketplace -->
+                    <div class="project-card" data-categories="web">
+                        <div class="project-card-image-wrapper">
+                            <img src="assets/project_rentany.png" alt="RentAny Peer-to-Peer Rental Marketplace" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-header-row">
+                                <div class="project-card-icon icon-blue">
+                                    <i class="fas fa-hand-holding-hand"></i>
+                                </div>
+                                <h3 class="project-card-title">RentAny Rental Marketplace</h3>
+                            </div>
+                            <p class="project-card-desc">A collaborative consumption web application allowing users to rent out their unused products or take items on rent from others, facilitating peer-to-peer sharing economy.</p>
+                            <div class="project-card-tags tags-blue">
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MySQL</span>
+                                <span>HTML5/CSS3</span>
+                                <span>Shared Economy</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <a href="https://github.com/umavignesh13" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Stock Price Prediction -->
+                    <div class="project-card" data-categories="ai data">
+                        <div class="project-card-image-wrapper">
+                            <img src="assets/project_data.png" alt="Stock Price Prediction ML Models" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-header-row">
+                                <div class="project-card-icon icon-blue">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 class="project-card-title">Stock Price Prediction Analysis</h3>
+                            </div>
+                            <p class="project-card-desc">Comparative analysis modeling stock closing metrics using Deep Learning (LSTM, RNN, DNN) and classical ML architectures to predict financial trends.</p>
+                            <div class="project-card-tags tags-blue">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Scikit-Learn</span>
+                                <span>LSTM</span>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <a href="https://github.com/umavignesh13" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Employee Performance -->
+                    <div class="project-card" data-categories="data">
+                        <div class="project-card-image-wrapper">
+                            <img src="assets/project_data.png" alt="Employee Performance SQL Analysis" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-header-row">
+                                <div class="project-card-icon icon-purple">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <h3 class="project-card-title">Employee Performance Analytics</h3>
+                            </div>
+                            <p class="project-card-desc">Analyzed company productivity metrics executing 30+ complex SQL relational queries. Engineered reports detailing trends on salaries, training, and retention rates.</p>
+                            <div class="project-card-tags tags-purple">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>MySQL</span>
+                                <span>Matplotlib</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <a href="https://github.com/umavignesh13" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Smart Farming -->
+                    <div class="project-card" data-categories="ai">
+                        <div class="project-card-image-wrapper">
+                            <img src="assets/project_iot.png" alt="IoT Smart Farming System" class="project-card-img">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-header-row">
+                                <div class="project-card-icon icon-green">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h3 class="project-card-title">IoT Smart Farming System</h3>
+                            </div>
+                            <p class="project-card-desc">Arduino-integrated environmental monitoring model recording temperature and soil moisture levels, automating irrigation logic scripts and dashboard reports.</p>
+                            <div class="project-card-tags tags-green">
+                                <span>Arduino</span>
+                                <span>Python</span>
+                                <span>Sensors</span>
+                                <span>Real-time Alerts</span>
+                            </div>
+                            <div class="project-card-actions">
+                                <a href="https://github.com/umavignesh13" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION -->
+            <section id="Education" class="edu-section scroll-trigger">
+                <div class="edu-hero">
+                    <div class="edu-hero-left">
+                        <span class="edu-badge"><i class="fas fa-graduation-cap"></i> My Journey</span>
+                        <h1 class="edu-heading">My <span>Education</span></h1>
+                        <p class="edu-subtext">My academic background has provided me with a strong foundation in computational algorithms, statistics, and programming paradigms.</p>
+                    </div>
+                    <div class="edu-hero-right">
+                        <div class="edu-cap-container">
+                            <div class="cap-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-body">
+                    <div class="edu-timeline-card">
+                        <div class="edu-card-header">
+                            <div class="edu-card-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h2 class="edu-card-title">Timeline</h2>
+                        </div>
+
+                        <!-- Entry 1 -->
+                        <div class="edu-entry">
+                            <div class="edu-entry-icon"><i class="fas fa-university"></i></div>
+                            <div class="edu-entry-dot"></div>
+                            <div class="edu-entry-body">
+                                <div class="edu-entry-top">
+                                    <div>
+                                        <h3 class="edu-degree">B.Tech in Data Science</h3>
+                                        <h4 class="edu-school">Vignan University, Andhra Pradesh</h4>
+                                    </div>
+                                    <span class="edu-date">2022 – Present</span>
+                                </div>
+                                <p class="edu-desc">Deep study of statistical inference, data architectures, algorithm optimizations, cloud deployment, and machine learning models.</p>
+                            </div>
+                        </div>
+
+                        <!-- Entry 2 -->
+                        <div class="edu-entry">
+                            <div class="edu-entry-icon"><i class="fas fa-school"></i></div>
+                            <div class="edu-entry-dot"></div>
+                            <div class="edu-entry-body">
+                                <div class="edu-entry-top">
+                                    <div>
+                                        <h3 class="edu-degree">Intermediate Education (MPC)</h3>
+                                        <h4 class="edu-school">Sri Chaitanya Junior College, Guntur</h4>
+                                    </div>
+                                    <span class="edu-date">2020 – 2022</span>
+                                </div>
+                                <p class="edu-desc">Focused study on Advanced Mathematics, Physics, and Chemistry principles.</p>
+                            </div>
+                        </div>
+
+                        <!-- Entry 3 -->
+                        <div class="edu-entry">
+                            <div class="edu-entry-icon"><i class="fas fa-school"></i></div>
+                            <div class="edu-entry-dot"></div>
+                            <div class="edu-entry-body">
+                                <div class="edu-entry-top">
+                                    <div>
+                                        <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+                                        <h4 class="edu-school">Sri Chaitanya Techno School, Guntur</h4>
+                                    </div>
+                                    <span class="edu-date">2020</span>
+                                </div>
+                                <p class="edu-desc">General education curriculum focusing on scientific foundations and computer literacy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACHIEVEMENTS -->
+            <section id="Achievements" class="achieve-section scroll-trigger">
+                <div class="achieve-header">
+                    <span class="achieve-badge"><i class="fas fa-trophy"></i> Milestones</span>
+                    <h1 class="achieve-title">My <span>Achievements</span></h1>
+                    <p class="achieve-subtitle">Recognitions for technical solutions and team athletic leadership.</p>
+                </div>
+
+                <div class="achieve-grid-split">
+                    <!-- Achievement 1 -->
+                    <div class="achieve-card highlight">
+                        <div class="achieve-card-glowing"></div>
+                        <div class="achieve-card-content">
+                            <div class="achieve-icon-badge">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>VVIT Hackathon</h3>
+                            <p class="achieve-rank">2nd Place Winner</p>
+                            <p class="achieve-desc">Secured the runner-up position in the VVIT Hackathon for designing and delivering a deployable AI-based solution.</p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achieve-card">
+                        <div class="achieve-card-content">
+                            <div class="achieve-icon-badge">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Kho-Kho Team Captaincy</h3>
+                            <p class="achieve-rank">Team Leader & Captain</p>
+                            <p class="achieve-desc">Led university Kho-Kho athletic teams, achieving tournament trophies and establishing critical collaboration techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATIONS -->
+            <section id="Certifications" class="cert-section scroll-trigger">
+                <div class="cert-header" style="text-align: center; max-width: 700px; margin: 0 auto 50px auto;">
+                    <span class="achieve-badge"><i class="fas fa-stamp"></i> Credentials</span>
+                    <h1 class="cert-title" style="font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; letter-spacing: -0.5px; text-align: center; font-family: var(--font-heading); color: var(--text-primary);">Professional <span style="color: var(--accent-mint);">Certifications</span></h1>
+                    <p class="cert-subtitle" style="font-size: 1.05rem; color: var(--text-secondary);">Academic and industry credentials verifying database, cloud, and full-stack capabilities.</p>
+                </div>
+
+                <!-- Certifications Panel -->
+                <div class="leetcode-showcase-panel" style="width: 100%; border: 1px solid var(--card-border);">
+                    <div class="badges-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px;">
+                        <div class="badge-card cert-card-click" data-cert="AWS Cloud Practitioner Certification" data-issuer="GeeksforGeeks" data-id="Dec 2025" data-url="https://media.geeksforgeeks.org/courses/certificates/291f445572944f16788c4e51c2fbe03b.pdf">
+                            <div class="cert-icon-circle"><i class="fab fa-aws"></i></div>
+                            <h4>AWS Cloud Practitioner</h4>
+                            <p>GeeksforGeeks — Dec 2025</p>
+                        </div>
+                        <div class="badge-card cert-card-click" data-cert="MERN Full Stack Developer" data-issuer="byteXL" data-id="Nov 2024" data-url="https://drive.google.com/file/d/18OYsEqQu8PUjlPM9FQfP0xFNE3N1Selu/view">
+                            <div class="cert-icon-circle"><i class="fas fa-code"></i></div>
+                            <h4>MERN Full Stack</h4>
+                            <p>byteXL — Nov 2024</p>
+                        </div>
+                        <div class="badge-card cert-card-click" data-cert="500 Difficulty Rating Milestone" data-issuer="CodeChef" data-id="Competitive Coding" data-url="https://drive.google.com/file/d/1NJ68w7nwLb7ZP558m4asX137GrscVEAR/view">
+                            <div class="cert-icon-circle"><i class="fas fa-terminal"></i></div>
+                            <h4>CodeChef 500 Rating</h4>
+                            <p>CodeChef Milestone</p>
+                        </div>
+                        <div class="badge-card cert-card-click" data-cert="Analyzing and Visualizing Data with Microsoft Power BI" data-issuer="Office Master" data-id="Dec 2024" data-url="https://drive.google.com/file/d/1qtSujMpn9NndP6sR49viyf6QRv-pwVvl/view">
+                            <div class="cert-icon-circle"><i class="fas fa-chart-bar"></i></div>
+                            <h4>Power BI Analytics</h4>
+                            <p>Office Master — Dec 2024</p>
+                        </div>
+                        <div class="badge-card cert-card-click" data-cert="Deloitte Data Analytics Job Simulation" data-issuer="Deloitte / Forage" data-id="Jun 2025" data-url="https://drive.google.com/file/d/1iJ9arTOignw6aFrmYtJn00zWFcR7-MvJ/view">
+                            <div class="cert-icon-circle"><i class="fas fa-business-time"></i></div>
+                            <h4>Deloitte Data Analytics</h4>
+                            <p>Deloitte Simulation — Jun 2025</p>
+                        </div>
+                        <div class="badge-card cert-card-click" data-cert="Learning Analytics Tools" data-issuer="NPTEL" data-id="NPTEL24CS20S1056304741 (Oct 2024)" data-url="https://drive.google.com/file/d/1EaGwlRbIpWN3ahWy2OZV9aW9ZgjHs0l5/view">
+                            <div class="cert-icon-circle"><i class="fas fa-chart-pie"></i></div>
+                            <h4>Learning Analytics Tools</h4>
+                            <p>NPTEL — Oct 2024</p>
+                        </div>
+                        <div class="badge-card cert-card-click" data-cert="Data Analytics with Python" data-issuer="NPTEL" data-id="NPTEL24CS20S1056304741 (Apr 2024)" data-url="https://drive.google.com/file/d/1eo-LJFyTTbgSyJK0s38W9U1CF2Z6D-5U/view">
+                            <div class="cert-icon-circle"><i class="fab fa-python"></i></div>
+                            <h4>Data Analytics with Python</h4>
+                            <p>NPTEL — Apr 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="Contact" class="contact-section scroll-trigger">
+                <div class="contact-layout">
+                    <!-- LEFT: Info Panel -->
+                    <div class="contact-left">
+                        <span class="contact-badge"><span class="badge-dot"></span> Get in Touch</span>
+                        <h1 class="contact-heading">Let's Connect <span class="contact-heading-accent">Together</span></h1>
+                        <p class="contact-subtext">Open to project collaborations, internships, and data engineering opportunities. Let's build something scalable!</p>
+
+                        <ul class="contact-info-list">
+                            <li>
+                                <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <span class="ci-label">Email</span>
+                                    <a href="mailto:dosapatiumavignesh@gmail.com" class="ci-value">dosapatiumavignesh@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <span class="ci-label">Phone</span>
+                                    <span class="ci-value">+91 85000 40962</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon-box"><i class="fab fa-whatsapp"></i></div>
+                                <div>
+                                    <span class="ci-label">WhatsApp</span>
+                                    <a href="https://wa.me/918500040962?text=Let's%20collaborate!" target="_blank" rel="noopener noreferrer" class="ci-value ci-link">+91 85000 40962 <i class="fas fa-external-link-alt ci-ext" style="font-size:0.75rem;"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <span class="ci-label">Location</span>
+                                    <span class="ci-value">Guntur, Andhra Pradesh, India</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon-box"><i class="fab fa-linkedin-in"></i></div>
+                                <div>
+                                    <span class="ci-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/umavignesh13" target="_blank" class="ci-value ci-link">linkedin.com/in/umavignesh13</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- RIGHT: Message Form -->
+                    <div class="contact-right">
+                        <div class="contact-form-card">
+                            <div class="form-card-header">
+                                <div class="form-icon-box"><i class="fas fa-paper-plane"></i></div>
+                                <div>
+                                    <h2 class="form-card-title">Send Me a Message</h2>
+                                    <p class="form-card-sub">Let's discuss opportunities or just have a chat.</p>
+                                </div>
+                            </div>
+
+                            <form id="contactForm" class="contact-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="userName">Your Name</label>
+                                        <input type="text" id="userName" name="name" placeholder="Enter your name" required autocomplete="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="userEmail">Your Email</label>
+                                        <input type="email" id="userEmail" name="email" placeholder="Enter your email" required autocomplete="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="userSubject">Subject</label>
+                                    <input type="text" id="userSubject" name="subject" placeholder="Enter subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="userMessage">Message</label>
+                                    <textarea id="userMessage" name="message" placeholder="Enter your message..." rows="5" required></textarea>
+                                </div>
+                                <div class="form-submit-row">
+                                    <button type="submit" class="form-submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                                </div>
+                                <div id="formFeedback" class="form-feedback"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <h3 class="footer-name">Dosapati Uma Vignesh</h3>
+                <p class="footer-role">Data Scientist & AI Developer</p>
+                <p class="footer-desc">Constructing intelligent, efficient solutions.</p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Quick Navigation</h4>
+                <div class="footer-links-grid">
+                    <ul>
+                        <li><a href="#Hero">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#Achievements">Achievements</a></li>
+                        <li><a href="#Certifications">Certifications</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-connect-col">
+                <h4 class="footer-col-title">Connect</h4>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/umavignesh13" target="_blank" class="footer-social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/umavignesh13" target="_blank" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/918500040962?text=Let's%20collaborate!" target="_blank" class="footer-social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dosapati Uma Vignesh. All rights reserved. <span class="footer-heart">💚</span></p>
+        </div>
+    </footer>
+
+    <!-- RESUME VIEW MODAL -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>My Resume</h2>
+                <span class="close" id="closeResumeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="resume-placeholder-view">
+                    <i class="fas fa-file-pdf resume-placeholder-icon"></i>
+                    <h3>Dosapati_Uma_Vignesh_Resume.pdf</h3>
+                    <p>Click below to download or print my complete professional CV.</p>
+                    <a href="assets/resume.pdf" class="form-submit-btn" style="text-decoration:none; display:inline-block;" download="Dosapati_Uma_Vignesh_Resume.pdf">
+                        <i class="fas fa-download"></i> Download Resume PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CERTIFICATION PREVIEW MODAL -->
+    <div id="certModal" class="modal">
+        <div class="modal-content cert-modal-content">
+            <div class="modal-header">
+                <h2 id="certModalTitle">Certificate Details</h2>
+                <span class="close" id="closeCertModal">&times;</span>
+            </div>
+            <div class="modal-body cert-modal-body">
+                <div class="cert-placeholder-img">
+                    <i class="fas fa-award cert-icon-lg"></i>
+                    <h3 id="certDisplayTitle">SQL Essentials</h3>
+                    <p id="certDisplayIssuer" style="color: var(--accent-mint); font-weight: 600; margin-bottom: 5px;"></p>
+                    <p id="certDisplayId" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 25px;"></p>
+                    <a href="#" id="certVerifyBtn" target="_blank" class="form-submit-btn" style="text-decoration:none; display:inline-block;">
+                        <i class="fas fa-external-link-alt"></i> Verify Credential
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll-to-Top Button -->
+    <div class="back-to-top" id="backToTop" aria-label="Back to top" role="button" tabindex="0">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript behaviour modules -->
+    <script src="js/backtotop.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

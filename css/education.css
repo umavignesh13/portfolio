@@ -1,0 +1,248 @@
+/* Education Timeline Styling */
+
+.edu-section {
+    position: relative;
+}
+
+.edu-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.edu-hero-left {
+    max-width: 650px;
+}
+
+.edu-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.edu-heading span {
+    color: var(--accent-mint);
+}
+
+.edu-subtext {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+}
+
+.edu-hero-right {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .edu-hero-right {
+        display: block;
+        position: relative;
+        width: 120px;
+        height: 80px;
+    }
+}
+
+.edu-cap-container {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(32, 178, 170, 0.15) 0%, transparent 70%);
+    right: 20px;
+    top: 0;
+}
+
+.cap-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px dashed rgba(127, 255, 212, 0.1);
+}
+
+.edu-body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.edu-timeline-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 35px 30px;
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .edu-timeline-card {
+        padding: 25px 20px;
+    }
+}
+
+.edu-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    padding-bottom: 20px;
+}
+
+.edu-card-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: rgba(32, 178, 170, 0.15);
+    color: var(--accent-mint);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.edu-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Timeline Vertical Line */
+.edu-timeline-card::after {
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 135px;
+    bottom: 50px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-sea-green), var(--bg-tertiary));
+}
+
+@media (max-width: 576px) {
+    .edu-timeline-card::after {
+        left: 35px;
+    }
+}
+
+.edu-entry {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+.edu-entry:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .edu-entry {
+        padding-left: 45px;
+    }
+}
+
+.edu-entry-icon {
+    position: absolute;
+    left: 17px;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--accent-mint);
+    color: var(--accent-mint);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    z-index: 10;
+    box-shadow: var(--glow-primary);
+}
+
+@media (max-width: 576px) {
+    .edu-entry-icon {
+        left: 12px;
+        width: 24px;
+        height: 24px;
+        font-size: 0.65rem;
+    }
+}
+
+.edu-entry-dot {
+    position: absolute;
+    left: 28px;
+    top: 30px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--accent-sea-green);
+    z-index: 5;
+}
+
+@media (max-width: 576px) {
+    .edu-entry-dot {
+        left: 21px;
+    }
+}
+
+.edu-entry-body {
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    padding: 20px;
+    transition: var(--transition-smooth);
+}
+
+.edu-entry-body:hover {
+    border-color: rgba(127, 255, 212, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.edu-entry-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    .edu-entry-top {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.edu-degree {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.edu-school {
+    font-size: 0.95rem;
+    color: var(--accent-sea-green);
+    font-weight: 500;
+}
+
+.edu-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 4px 12px;
+    border-radius: 40px;
+    border: 1px solid rgba(255,255,255,0.05);
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+@media (min-width: 768px) {
+    .edu-date {
+        margin-top: 0;
+    }
+}
+
+.edu-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}

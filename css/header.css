@@ -1,0 +1,206 @@
+/* Header/Navigation bar styles */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: rgba(5, 16, 17, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--card-border);
+    z-index: 1000;
+    transition: var(--transition-smooth);
+}
+
+header.scrolled {
+    height: 70px;
+    background: rgba(5, 16, 17, 0.9);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.nav-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-heading);
+}
+
+.nav-logo-text {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.nav-logo-text span {
+    color: var(--accent-mint);
+    text-shadow: var(--glow-primary);
+}
+
+.nav-logo-subtext {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-left: 1px solid var(--text-muted);
+    padding-left: 10px;
+    display: none; /* Hidden on small screens */
+}
+
+@media (min-width: 768px) {
+    .nav-logo-subtext {
+        display: block;
+    }
+}
+
+/* Nav Menu Links */
+#mainNav {
+    display: none; /* Toggle behavior handles this */
+}
+
+#mainNav a {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    position: relative;
+}
+
+#mainNav a:hover, #mainNav a.active {
+    color: var(--accent-mint);
+}
+
+#mainNav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-sea-green), var(--accent-mint));
+    transition: var(--transition-smooth);
+}
+
+#mainNav a:hover::after, #mainNav a.active::after {
+    width: calc(100% - 32px);
+}
+
+/* Action button in nav */
+.nav-cta {
+    display: none;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--bg-primary);
+    background: linear-gradient(90deg, var(--accent-sea-green), var(--accent-mint));
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: var(--glow-primary);
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--glow-secondary);
+    background: linear-gradient(90deg, var(--accent-mint), var(--accent-sea-green));
+}
+
+@media (min-width: 1024px) {
+    #mainNav {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .nav-cta {
+        display: flex;
+    }
+}
+
+/* Mobile Nav Toggle Icon */
+.nav-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    color: var(--accent-mint);
+    font-size: 1.2rem;
+}
+
+.nav-toggle:hover {
+    border-color: var(--accent-sea-green);
+    color: var(--text-primary);
+}
+
+@media (min-width: 1024px) {
+    .nav-toggle {
+        display: none;
+    }
+}
+
+/* Drawer Menu Style for Mobile */
+@media (max-width: 1023px) {
+    #mainNav.mobile-open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background: rgba(5, 16, 17, 0.95);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--card-border);
+        padding: 30px 20px;
+        gap: 15px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        z-index: 999;
+        transform: translateY(0);
+        animation: navSlideDown 0.4s ease forwards;
+    }
+    
+    #mainNav.mobile-open a {
+        font-size: 1.1rem;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+        width: 100%;
+    }
+    
+    #mainNav.mobile-open a::after {
+        left: 0;
+    }
+    
+    #mainNav.mobile-open a:hover::after, #mainNav.mobile-open a.active::after {
+        width: 60px;
+    }
+}
+
+.nav-spacer {
+    height: var(--header-height);
+}
+
+@keyframes navSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

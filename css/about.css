@@ -1,0 +1,71 @@
+/* About Me Styling */
+
+.about-section {
+    background-color: var(--bg-secondary);
+    border-radius: 30px;
+    margin: 40px 0;
+    padding: 80px 40px;
+    border: 1px solid var(--card-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(32, 178, 170, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.about-wrapper {
+    position: relative;
+    z-index: 5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-heading {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+.about-heading-accent {
+    color: var(--accent-mint);
+    text-shadow: var(--glow-primary);
+}
+
+.about-bio {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-bio strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 50px 20px;
+        border-radius: 20px;
+    }
+    
+    .about-heading {
+        font-size: 1.8rem;
+    }
+}
