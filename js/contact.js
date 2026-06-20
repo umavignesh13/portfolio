@@ -46,23 +46,40 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
             
-            // Mock dynamic loading states
+            // Real Web3Forms submission logic
             const submitBtn = contactForm.querySelector('.form-submit-btn');
             const originalBtnHtml = submitBtn.innerHTML;
             
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             
-            setTimeout(function () {
+            const formData = new FormData(contactForm);
+            
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status === 200) {
+                    formFeedback.classList.add('success');
+                    formFeedback.textContent = 'Thank you! Your message has been sent successfully.';
+                    contactForm.reset();
+                } else {
+                    console.log(response);
+                    formFeedback.classList.add('error');
+                    formFeedback.textContent = json.message || 'Something went wrong. Please try again.';
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                formFeedback.classList.add('error');
+                formFeedback.textContent = 'Something went wrong. Please check your internet connection.';
+            })
+            .finally(() => {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnHtml;
-                
-                formFeedback.classList.add('success');
-                formFeedback.textContent = 'Thank you! Your message has been sent successfully.';
-                
-                // Reset fields
-                contactForm.reset();
-            }, 1500);
+            });
         });
     }
     
